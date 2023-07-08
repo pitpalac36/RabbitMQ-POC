@@ -1,6 +1,5 @@
 ## Description 
-Small distributed app for buying tickets to the cinema. The server receives client requests through an ASP.NET Core Controller and delegates tasks to the workers through a RabbitMQ message queue. Another queue is used by workers for sending acknowledgements and responses back to the server.
-The worker communicates with a postgres local database. Both Postgres and RabbitMQ are started as services described in the docker-compose file.
+Small distributed app for buying tickets to the cinema. The server receives client requests through an ASP.NET Core Controller and delegates tasks to the workers through a RabbitMQ message queue. Another queue is used by workers for sending acknowledgements and responses back to the server. The worker communicates with a postgres local database. Both Postgres and RabbitMQ are started as services described in the docker-compose file. Project doesn't have a UI, to be run and tested in dev move using the integrated SwaggerUI.
 
 ## Requirements
 At least the following requirements should be met:
